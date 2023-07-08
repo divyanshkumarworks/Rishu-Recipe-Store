@@ -1,0 +1,108 @@
+{% load static %}
+{% static "mainapp/images/items" as BaseUrl %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/detail.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <title>Detail Page</title>
+  </head>
+  <body>
+
+    <header id="navdiv">
+        <div  class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg ">
+              <div class="container-fluid">
+                  <a href="#" id="sitename" class="navbar-brand">Recipe Store</a>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                      <div id="searchbar2" class="navbar-nav">
+                        <div class="searchbar">
+                          <div class="input-group d-flex form-inputs">
+                            <input type="text" id="id_text" class="form-control input-text" placeholder="Search for something" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <a class="" href="#tosearch"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="navbar-nav ms-auto">
+                        <a href="#" class="nav-item nav-link">Favourites</a>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+        </div>
+      </div>
+      </header>
+    
+
+    <main>
+      <div class="card-body">
+        <div class="container-fluid">
+          <h2>
+            {{ food.name }}
+          </h2>
+          <a href=""><h5 style="padding: 10px; background-color: whitesmoke; border-radius: 7px;" class="float-right">Add to favourites</h5></a>
+          <p class="text-muted">prep time: {{ food.prep_time }}</p>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="{{ food.image }}" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{{ food.image }}" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="{{ food.image }}" alt="Third slide">
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          <br><hr>
+          <h4>Description</h4>
+          <p>{{ food.description }}</p>
+          <h4>Ingredients</h4>
+          <ul id="ingredients">
+
+          </ul>      
+          <hr>
+          <h4>Directions</h4>
+          <ol id="steps" style="list-style: none;">
+            
+          </ol>
+        </div>
+      </div>
+    </main>
+
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>document.food_id = {{ food.id }}</script>
+    <script type="text/javascript" src="{% static 'mainapp/js/detail.js' %}"></script>
+
+  </body>
+</html>

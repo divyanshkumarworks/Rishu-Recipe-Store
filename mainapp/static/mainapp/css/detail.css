@@ -1,0 +1,87 @@
+.card-body{
+	position: absolute;
+	top: 57px;
+	left: 50px;
+	height: 800px;
+	width: 800px;
+}
+
+.navbar {
+	top: 0;
+	padding: 8px 0 ;
+	margin: 0;
+}
+
+h2, h4 ,a#sitename{
+	font-family: 'Dancing Script', cursive;
+
+}
+
+body{
+	font-family: Georgia;
+}
+
+a {
+	color: black;
+}
+
+a.nav-link{
+	position: relative;
+    display: inline-block;
+    font-family: Georgia;
+    color:black;
+    text-align: center;
+}
+
+#id_text{
+	width: 100%;
+	margin: auto;
+}
+
+
+.container-fluid{
+	margin: 0;
+	padding-bottom: 0 12px;
+	padding-left: 12px;
+}
+
+header#navdiv{
+    position: sticky;
+    overflow-x: hidden;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+div.searchbar{
+    width: 46%;
+    margin:auto;
+    font-family: 'Merriweather', serif;
+    width: 446px;
+}
+
+svg{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #d2d2d2;
+}
+
+svg:hover{
+    color: black;
+}
+
+.input-text:focus, #id_text{
+       
+  
+    box-shadow: 0px 0px 0px;
+    border-color: black;
+    outline: 0px;
+}
+
+div#searchbar2{
+    width: 100%;
+}
+

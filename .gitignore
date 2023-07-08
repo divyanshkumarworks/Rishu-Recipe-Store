@@ -1,0 +1,7 @@
+db.sqlite3
+test.html
+lang.py
+__pycache__/
+*.pyc
+db
+mainapp/migrations
