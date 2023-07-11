@@ -14,8 +14,9 @@ import magic
 import os
 import nltk
 from langchain.chat_models import ChatOpenAI
+from recipe_store.secrets import SECRET_KEY 
 
-openai_api_key = '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'
+openai_api_key = SECRET_KEY
 loader = DirectoryLoader(r'C:\Users\rishu\recipe_store\recipe_txt', glob='*.txt', loader_cls=TextLoader)
 documents = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
