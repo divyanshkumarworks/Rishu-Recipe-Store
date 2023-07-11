@@ -24,6 +24,20 @@ Recipe Store uses a number of open source projects to work properly:
 - [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - great UI boilerplate for modern web apps
 - [Django](https://www.djangoproject.com/start/) - framework for python
 
+## Screenshots
+
+📌 Home Page
+
+![Screenshot (43)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/2812b233-250d-4e8b-aee6-2c864573e41f)
+
+📌 Detail Page
+
+![Screenshot (44)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/481a4a64-a21d-47f9-b69a-96d375b5fe5b)
+
+📌 Favourite Page
+
+![Screenshot (45)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/22899703-a483-4870-8183-4a6552c26dc1)
+
 ## DISCUSSION:
 
 Through this project, we have made a system that has the potential to generate recipes out of the given set of ingredients. Also, this project has the potential to get implemented in different parts of the world helping users with making delicious recipes at their disposal.
