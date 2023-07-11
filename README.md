@@ -20,9 +20,9 @@ Recipe Store uses a number of open source projects to work properly:
 
 - [Javacript] - HTML enhanced for web apps!
 - [Sublime text editor](https://www.sublimetext.com/) - feature-rich text editor renowned for its speed, efficiency, and extensive customization options 
-- [Langchain]([https://www.sublimetext.com/](https://python.langchain.com/docs/get_started/introduction.html)) - framework for developing LLMs.
-- [Bootstrap]([https://www.sublimetext.com/](https://getbootstrap.com/docs/5.3/getting-started/introduction/)) - great UI boilerplate for modern web apps
-- [Django]([https://www.sublimetext.com/](https://www.djangoproject.com/start/)) - framework for python
+- [Langchain](https://python.langchain.com/docs/get_started/introduction.html) - framework for developing LLMs.
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - great UI boilerplate for modern web apps
+- [Django](https://www.djangoproject.com/start/) - framework for python
 
 ## DISCUSSION:
 
