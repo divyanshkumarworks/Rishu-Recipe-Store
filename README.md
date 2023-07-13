@@ -14,16 +14,6 @@
 - Recipes for vegetarians, meat eaters, and people who want to lose weight
 - Built with Django, Javascript and Python 
 
-## Tech Stack
-
-Recipe Store uses a number of open source projects to work properly:
-
-- [Javacript] - HTML enhanced for web apps!
-- [Sublime text editor](https://www.sublimetext.com/) - feature-rich text editor renowned for its speed, efficiency, and extensive customization options 
-- [Langchain](https://python.langchain.com/docs/get_started/introduction.html) - framework for developing LLMs.
-- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - great UI boilerplate for modern web apps
-- [Django](https://www.djangoproject.com/start/) - framework for python
-
 ## Screenshots
 
 📌 Home Page
@@ -37,6 +27,16 @@ Recipe Store uses a number of open source projects to work properly:
 📌 Favourite Page
 
 ![Screenshot (45)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/22899703-a483-4870-8183-4a6552c26dc1)
+
+## Tech Stack
+
+Recipe Store uses a number of open source projects to work properly:
+
+- [Javacript] - HTML enhanced for web apps!
+- [Sublime text editor](https://www.sublimetext.com/) - feature-rich text editor renowned for its speed, efficiency, and extensive customization options 
+- [Langchain](https://python.langchain.com/docs/get_started/introduction.html) - framework for developing LLMs.
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - great UI boilerplate for modern web apps
+- [Django](https://www.djangoproject.com/start/) - framework for python
 
 ## DISCUSSION:
 
