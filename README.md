@@ -18,15 +18,15 @@
 
 📌 Home Page
 
-![Screenshot (43)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/2812b233-250d-4e8b-aee6-2c864573e41f)
+![Screenshot (43)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/65b13a66-ea1d-4aeb-9b78-fd5ee4b12d90)
 
 📌 Detail Page
 
-![Screenshot (44)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/481a4a64-a21d-47f9-b69a-96d375b5fe5b)
+![Screenshot (46)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/482d3959-e677-47f9-8a54-bb6b499eb65d)
 
 📌 Favourite Page
 
-![Screenshot (45)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/22899703-a483-4870-8183-4a6552c26dc1)
+![Screenshot (45)](https://github.com/divyanshkumarworks/Rishu-Recipe-Store/assets/134360630/22ad10d2-231f-4389-ae49-1d438a9d1f66)
 
 ## Tech Stack
 
