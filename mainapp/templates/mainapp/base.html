@@ -62,8 +62,8 @@
           <div class="searchbar">
             <div class="input-group mb-3 d-flex form-inputs">
               <input type="text" id="id_text" class="form-control input-text" placeholder="Search for something" aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <a class="" href="#tosearch">
-                <i class="bi bi-search"></i>
+              <a class="" href="{% url 'chatgpt-page' %}" onclick="loadChat()">
+                <i class="bi bi-search" style="position: absolute; right: 1%;top: 8px;z-index: 999;"></i>
               </a>
             </div>
           </div>        
