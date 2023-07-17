@@ -293,7 +293,7 @@ function addPopularLunch(id, like_class, bg_color, image, name, description) {
                   <img class="card-img-top" src="` + image + `" alt="Card image cap">
                 </div>
                 <div class="owl-text">
-                  <a class="card-title" href="">` + name + `</a>
+                  <a class="card-title" href="/detail/` + id + `">` + name + `</a>
                 </div>
               </div>`
   popular_lunch_div = document.getElementById("lunch-owl");

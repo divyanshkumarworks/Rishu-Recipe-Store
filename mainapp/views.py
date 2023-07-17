@@ -19,10 +19,11 @@ from recipe_store.secrets import SECRET_KEY
 openai_api_key = SECRET_KEY
 loader = DirectoryLoader(r'C:\Users\rishu\recipe_store\recipe_txt', glob='*.txt', loader_cls=TextLoader)
 documents = loader.load()
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, length_function=len)
 texts = text_splitter.split_documents(documents)
 embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
-docsearch = Chroma.from_documents(texts, embeddings,  persist_directory='db')
+# docsearch = Chroma.from_documents(texts, embeddings,  persist_directory='db')
+docsearch = Chroma.from_documents(texts, embeddings,  persist_directory='db', metadatas=[{"source": f"{i}-pl"} for i in range(len(texts))])
 # Create your views here.
 
 def home_page(request):
@@ -201,31 +202,29 @@ def chat_api(request):
 		# 	temperature = 0.6,
 		# 	model_name = "gpt-3.5-turbo"
 		# 	)
-		retriever = docsearch.as_retriever(search_kwargs={"k": 2})
-		chain = RetrievalQA.from_chain_type(llm=OpenAI(temperature=1), chain_type="stuff", retriever=retriever, return_source_documents=True)
+		retriever = docsearch.as_retriever()
+		chain = RetrievalQA.from_chain_type(llm=OpenAI(temperature=1), chain_type="stuff", retriever=retriever)
 		result = chain(query)
 		# response = answer
-		
-		print(result["source_documents"])
-
+		print(result)
 		data = {
 			"response": result["result"],
 			"recipes": []
 		}	
 
-		for item in result["source_documents"]:
-			recipe_id = item.metadata["source"][-6:-4]
-			recipe = Recipe.objects.get(id=recipe_id)
+		# for item in result["source_documents"]:
+		# 	recipe_id = item.metadata["source"][-6:-4]
+		# 	recipe = Recipe.objects.get(id=recipe_id)
 
-			data["recipes"].append(
-					{
-						"id": recipe.id,
-						"description": recipe.description,
-						"image": recipe.image,
-						"prep_time": recipe.prep_time,
-						"name": recipe.name
-					}
-				)		
+		# 	data["recipes"].append(
+		# 			{
+		# 				"id": recipe.id,
+		# 				"description": recipe.description,
+		# 				"image": recipe.image,
+		# 				"prep_time": recipe.prep_time,
+		# 				"name": recipe.name
+		# 			}
+		# 		)		
 
 		return JsonResponse(data)
 

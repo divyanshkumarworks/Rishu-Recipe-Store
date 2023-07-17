@@ -6,3 +6,4 @@ __pycache__/
 db
 mainapp/migrations
 recipe_store/secrets
+recipe_txt2
