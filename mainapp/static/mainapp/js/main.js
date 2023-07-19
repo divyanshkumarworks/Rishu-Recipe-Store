@@ -67,7 +67,7 @@ function loadChat(userMessage) {
         }
     }
     else if (xhr.status === 400) {
-      alert("not working")
+      alert("Some error occurred. Please try again")
     }
 
   };
