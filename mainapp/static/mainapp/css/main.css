@@ -274,17 +274,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#send-button {
-  margin-left: 10px;
-  padding: 8px 12px;
-  font-size: 14px;
-  border: none;
-  border-radius: 20px;
-  background-color: #4caf50;
-  color: #ffffff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+
 
 #send-button:hover {
   background-color: #45a849;
@@ -294,52 +284,6 @@ body {
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px;
-}
-
-.ai-message {
-  background-color: #f0f0f0;
-  color: #333333;
-  border-radius: 20px;
-  padding: 10px 15px;
-  max-width: 70%;
-  position: relative;
-}
-
-.ai-message::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -12px;
-  border-top: 12px solid transparent;
-  border-right: 12px solid #f0f0f0;
-  border-bottom: 12px solid transparent;
-}
-
-.user-message {
-  background-color: #007bff;
-  color: #ffffff;
-  border-radius: 20px;
-  padding: 10px 15px;
-  max-width: 70%;
-  position: relative;
-}
-
-.user-message::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -12px;
-  border-top: 12px solid transparent;
-  border-left: 12px solid #007bff;
-  border-bottom: 12px solid transparent;
-}
-
-.user-message .message-content {
-  text-align: right;
-}
-
-.ai-message .message-content {
-  text-align: left;
 }
 
 body {
